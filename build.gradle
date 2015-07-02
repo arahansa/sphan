@@ -1,0 +1,62 @@
+apply plugin: 'war'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.2.4.RELEASE')
+    }
+}
+ext {
+    javaVersion='1.8'
+}
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+buildDir = 'build'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-tomcat")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("com.h2database:h2")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("junit:junit:4.+")
+    testCompile("com.jayway.jsonpath:json-path")
+
+
+}
+
+task initSrc << {
+    project.sourceSets*.allSource.srcDirTrees.flatten().dir.each { dir ->
+        dir.mkdirs()
+    }
+}
+
+
+
+// 소스 인코딩 지정방법
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+
+/* Eclipse 관련 설정들 */
+tasks.eclipse.dependsOn cleanEclipse
+tasks.eclipse.dependsOn initSrc
+
+tasks.idea.dependsOn initSrc
+
+eclipse {
+    classpath {
+        downloadSources = true
+        defaultOutputDir = file("${buildDir}/classes/main")
+    }
+}

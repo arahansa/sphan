@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="service.ArticleServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-06-29T14:04:26" hostname="arahansa-PC" time="0.001">
+  <properties/>
+  <testcase name="delete" classname="service.ArticleServiceTest" time="0.0"/>
+  <testcase name="update" classname="service.ArticleServiceTest" time="0.0"/>
+  <testcase name="pages" classname="service.ArticleServiceTest" time="0.001"/>
+  <testcase name="getArticle" classname="service.ArticleServiceTest" time="0.0"/>
+  <system-out><![CDATA[2015-06-29 23:04:26.985  INFO 4964 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015-06-29 23:04:26.985  INFO 4964 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@54081bec, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@abd02f8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1507f944, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4388cf19, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@57cb6bff]
+[com.codingtest.dto.Page@3503193c, com.codingtest.dto.Page@1fe41b01, com.codingtest.dto.Page@1a11ffe3, com.codingtest.dto.Page@1609ebcd, com.codingtest.dto.Page@3b6edac9]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

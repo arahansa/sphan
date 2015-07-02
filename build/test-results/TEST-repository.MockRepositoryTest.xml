@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repository.MockRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-06-29T14:04:26" hostname="arahansa-PC" time="0.003">
+  <properties/>
+  <testcase name="update" classname="repository.MockRepositoryTest" time="0.002"/>
+  <testcase name="saveAndRead" classname="repository.MockRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[2015-06-29 23:04:26.976  INFO 4964 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015-06-29 23:04:26.976  INFO 4964 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@184eba8c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6ea02415, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36e0377a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67ead802, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a9d94a9]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
